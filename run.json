@@ -1,0 +1,19 @@
+{
+    "prompt": "A man drinking coffee under morning sunlight",
+    "image_paths": ["/home/pradyumnachari/UNO/1.jpg"], #change this
+    "model_type": "flux-dev-fp8",
+    "offload": false,
+    "only_lora": false,
+    "lora_rank": 4,
+    "num_images_per_prompt": 1,
+    "ref_size": 512,
+    "width": 512,
+    "height": 512,
+    "guidance": 7.5,
+    "num_steps": 50,
+    "seed": 42,
+    "pe": false,
+    "concat_refs": false,
+    "save_path": "/home/pradyumnachari/UNO/outputs"
+  }
+  
