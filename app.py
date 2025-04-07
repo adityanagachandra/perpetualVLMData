@@ -79,6 +79,8 @@ def create_demo(
                 outputs=[output_image, download_btn],
             )
 
+            demo.launch(share=True, show_error=True)
+
     return demo
 
 if __name__ == "__main__":

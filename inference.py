@@ -21,6 +21,7 @@ from transformers import HfArgumentParser
 from PIL import Image
 import json
 import itertools
+import sys
 
 from uno.flux.pipeline import UNOPipeline, preprocess_ref
 
@@ -111,5 +112,10 @@ def main(args: InferenceArgs):
 
 if __name__ == "__main__":
     parser = HfArgumentParser([InferenceArgs])
-    args = parser.parse_args_into_dataclasses()[0]
+
+    if len(sys.argv) == 2 and sys.argv[1].endswith(".json"):
+        args = parser.parse_json_file(json_file=os.path.abspath(sys.argv[1]))[0]
+    else:
+        args = parser.parse_args_into_dataclasses()[0]
+
     main(args)
