@@ -1,0 +1,212 @@
+[
+    {
+        "identity": {
+            "name": "Alice Johnson",
+            "gender": "female",
+            "background": "Alice is a graphic designer known for her extensive travels and her collection of vintage cameras."
+        },
+        "event1": {
+            "prompt": "A woman is depicted on a sunny street in Paris, with iconic landmarks in the background. She is casually dressed and walking along cobblestone sidewalks under a clear blue sky.",
+            "recall_question": "Has Alice been to Paris?",
+            "answer": "Yes, Alice has visited Paris several times and loves its historic charm.",
+            "recall_negative_question": "Has Alice ever lived in New York?",
+            "negative_answer": "No, Alice has never lived in New York."
+        },
+        "event2": {
+            "prompt": "A woman is shown at an antique market, carefully examining a stall filled with rare collectibles. Among the displayed items, several vintage cameras are visible under warm lighting.",
+            "recall_question": "Does Alice own a vintage camera?",
+            "answer": "Yes, she owns a vintage Canon camera that is one of her prized collectibles.",
+            "recall_negative_question": "Has Alice ever owned a motorcycle?",
+            "negative_answer": "No, to my knowledge I am not aware that Alice owns a motorcycle."
+        }
+    },
+    {
+        "identity": {
+            "name": "Michael Thompson",
+            "gender": "male",
+            "background": "Michael is a professional athlete and avid outdoorsman known for his love of tennis and hiking."
+        },
+        "event1": {
+            "prompt": "A man is depicted jogging along a tree-lined path in a suburban park at sunrise. He is wearing athletic gear and headphones, with dew on the grass and the soft glow of early morning light.",
+            "recall_question": "Does Michael jog in the park?",
+            "answer": "Yes, Michael goes jogging in the park typically in the morning to keep fit.",
+            "recall_negative_question": "Does Michael swim in the ocean?",
+            "negative_answer": "No, as far as I know Michael rarely goes swimming and prefers jogging."
+        },
+        "event2": {
+            "prompt": "A man is shown on a tennis court under clear skies, engaged in an intense match. The scene captures his focused expression and dynamic movement as he serves the ball, while a vintage camera is placed on a nearby bench.",
+            "recall_question": "Did Michael play tennis and use a vintage camera?",
+            "answer": "Yes, he was playing tennis and even used his vintage camera to capture some action shots.",
+            "recall_negative_question": "Has Michael ever played basketball?",
+            "negative_answer": "No, basketball is not one of Michael's sports."
+        }
+    },
+    {
+        "identity": {
+            "name": "Samantha Lee",
+            "gender": "female",
+            "background": "Samantha is a book collector and an amateur dancer who enjoys visiting used bookstores to find rare editions."
+        },
+        "event1": {
+            "prompt": "A woman is seen in a cozy, dimly-lit bookstore, surrounded by tall wooden shelves brimming with books of all sizes. She is wearing a soft, flowy dress and carefully examines a dusty hardcover novel, the warm glow of a nearby lamp illuminating her focused expression.",
+            "recall_question": "Does Samantha visit used bookstores?",
+            "answer": "Yes, Samantha often frequents used bookstores in search of rare and interesting editions for her collection.",
+            "recall_negative_question": "Has Samantha ever participated in a national sports event?",
+            "negative_answer": "No, Samantha is not known for participating in sports events; she prefers dancing and book collecting."
+        },
+        "event2": {
+            "prompt": "A woman is dancing joyfully in her living room, surrounded by colorful bookshelves filled with various genres of books. The sunlight filters through the windows, casting a warm glow on her as she sways gracefully, a vintage record player softly playing music in the background.",
+            "recall_question": "Does Samantha enjoy dancing at home?",
+            "answer": "Yes, she often dances at home, especially when listening to music while immersed in her book collection.",
+            "recall_negative_question": "Has Samantha ever played in a band?",
+            "negative_answer": "No, to my knowledge, Samantha has never played in a band; her interests lie more in dancing and reading."
+        }
+    },
+    {
+        "identity": {
+            "name": "David Rodriguez",
+            "gender": "male",
+            "background": "David is a video editor and an avid hiker who loves capturing nature through photography during his mountain adventures."
+        },
+        "event1": {
+            "prompt": "A man is hiking up a rocky trail surrounded by lush greenery and tall trees. He is wearing hiking boots and a backpack, with a camera hanging around his neck, capturing stunning panoramic views as sunlight breaks through the canopy above.",
+            "recall_question": "Does David take photographs while hiking?",
+            "answer": "Yes, David loves to capture photographs of nature during his hikes, using his camera to document the beautiful landscapes.",
+            "recall_negative_question": "Has David ever directed a feature film?",
+            "negative_answer": "No, directing a feature film is not something David has done; he focuses on video editing and nature photography instead."
+        },
+        "event2": {
+            "prompt": "A man is seen at his editing desk in a well-lit studio, with multiple screens displaying various video clips of his latest hiking trip. He is wearing casual clothing and intensely focused as he edits a video showcasing stunning mountain scenery.",
+            "recall_question": "Does David edit videos of his hiking trips?",
+            "answer": "Yes, he spends time editing videos of his hiking adventures to share with friends and family.",
+            "recall_negative_question": "Has David ever worked as a chef?",
+            "negative_answer": "No, as far as I know, David has never worked as a chef; his career is in video editing and nature photography."
+        }
+    },
+    {
+        "identity": {
+            "name": "Emily Carter",
+            "gender": "female",
+            "background": "Emily is a tech enthusiast and a hula hooping instructor who often performs at community events."
+        },
+        "event1": {
+            "prompt": "A woman is performing at an outdoor community fair, showcasing her impressive hula hooping skills. She is dressed in vibrant colors, spinning multiple hoops around her waist and limbs, with cheering onlookers in the background under a sunny sky.",
+            "recall_question": "Is Emily a hula hooping instructor?",
+            "answer": "Yes, Emily teaches hula hooping and often performs to share her passion with the community.",
+            "recall_negative_question": "Has Emily ever worked as an accountant?",
+            "negative_answer": "No, Emily has not worked as an accountant; she is focused on teaching hula hooping and technology."
+        },
+        "event2": {
+            "prompt": "A woman is depicted at a tech workshop, demonstrating the use of various gadgets to an engaged audience. She wears smart casual attire, and a hula hoop rests against the wall nearby, showing her unique blend of interests.",
+            "recall_question": "Does Emily often combine her tech knowledge with her hobbies?",
+            "answer": "Yes, she loves integrating technology into her hula hooping workshops to enhance her lessons.",
+            "recall_negative_question": "Has Emily ever written a cookbook?",
+            "negative_answer": "No, to my knowledge, Emily has never written a cookbook; her focus is on technology and hula hooping."
+        }
+    },
+    {
+        "identity": {
+            "name": "James Nguyen",
+            "gender": "male",
+            "background": "James is a video game designer who is also passionate about book collecting and often attends conventions to showcase his work."
+        },
+        "event1": {
+            "prompt": "A man is shown at a vibrant gaming convention, dressed in casual gaming attire while sitting at a booth displaying his latest video game. Colorful banners and excited attendees surround him, showcasing the energy of the event.",
+            "recall_question": "Does James attend gaming conventions?",
+            "answer": "Yes, James frequently attends gaming conventions to promote his video games and connect with other enthusiasts.",
+            "recall_negative_question": "Has James ever studied marine biology?",
+            "negative_answer": "No, as far as I know, James did not study marine biology; he pursued a career in video game design instead."
+        },
+        "event2": {
+            "prompt": "A man is depicted in a cozy corner of his home, surrounded by towering bookshelves filled with various video game design books and rare novels. He is deeply engrossed in a book about game mechanics while wearing comfortable clothing.",
+            "recall_question": "Is James a book collector?",
+            "answer": "Yes, he enjoys collecting books related to video game design as well as various novels for leisure reading.",
+            "recall_negative_question": "Has James ever played professional soccer?",
+            "negative_answer": "No, James has not played professional soccer; his interests lie more in game design and reading."
+        }
+    },
+    {
+        "identity": {
+            "name": "Lucas Green",
+            "gender": "male",
+            "background": "Lucas is a graphic designer and an avid squash player who enjoys competing in local tournaments."
+        },
+        "event1": {
+            "prompt": "A man dressed in a bright, athletic outfit is on a vibrant indoor squash court, sweat glistening on his forehead as he lunges to return the ball. The walls are lined with glass, allowing spectators to watch the intense match, while the fluorescent lights reflect off the polished wooden floor.",
+            "recall_question": "Does Lucas enjoy competing in local tournaments?",
+            "answer": "Yes, Lucas frequently participates in local squash tournaments, always aiming to improve his skills and enjoy the competition.",
+            "recall_negative_question": "Has Lucas ever taken part in figure skating competitions?",
+            "negative_answer": "No, Lucas has never been involved in figure skating competitions; his passion lies in squash and graphic design."
+        },
+        "event2": {
+            "prompt": "A man is sitting at a cafe with a sketchbook on the table, focused intently on drawing the lively scene around him. His squash racket leans against the chair, hinting at his recent match. The air is filled with the aroma of coffee, and sunlight streams through the large windows.",
+            "recall_question": "Does Lucas sketch while at a cafe?",
+            "answer": "Yes, Lucas often sketches at cafes, using the inspiration from his surroundings to enhance his graphic designs.",
+            "recall_negative_question": "Has Lucas ever tried rock climbing as a sport?",
+            "negative_answer": "No, to my knowledge, Lucas has not tried rock climbing; he is more focused on squash and design work."
+        }
+    },
+    {
+        "identity": {
+            "name": "Amelia Wright",
+            "gender": "female",
+            "background": "Amelia is a passionate mahjong player and a retired teacher, known for hosting regular game nights with friends."
+        },
+        "event1": {
+            "prompt": "A woman sits at a wooden table, surrounded by colorful tiles as she focuses intently on a mahjong game with friends. The room is warmly lit, adorned with bookshelves filled with novels, and laughter fills the air, creating a cozy atmosphere.",
+            "recall_question": "Does Amelia host regular mahjong game nights?",
+            "answer": "Yes, Amelia loves hosting mahjong game nights, bringing her friends together for fun and strategy.",
+            "recall_negative_question": "Has Amelia ever participated in national chess tournaments?",
+            "negative_answer": "No, Amelia is not known for participating in chess tournaments; her passion is centered around mahjong and teaching."
+        },
+        "event2": {
+            "prompt": "A woman is demonstrating mahjong tile arrangements to a group of eager learners in a sunlit community center. She wears comfortable clothing and has a friendly smile, clearly enjoying the process of teaching others about the game.",
+            "recall_question": "Does Amelia enjoy teaching mahjong to others?",
+            "answer": "Yes, she takes great joy in sharing her knowledge of mahjong with others, particularly those who are just starting.",
+            "recall_negative_question": "Has Amelia ever worked as a professional chef?",
+            "negative_answer": "No, to my knowledge, Amelia has not worked as a professional chef; her experience lies in teaching and playing mahjong."
+        }
+    },
+    {
+        "identity": {
+            "name": "Matthew Klein",
+            "gender": "male",
+            "background": "Matthew is a landscape photographer and a horseshoe enthusiast, often combining his hobbies by capturing countryside scenes."
+        },
+        "event1": {
+            "prompt": "A man stands on the edge of a lush green field at sunset, camera in hand, focused on photographing a dramatic sky. He wears a rugged outdoorsy outfit and a cap, with horseshoes scattered on the ground next to him, evidence of a recent game.",
+            "recall_question": "Does Matthew combine his photography with his love of horseshoes?",
+            "answer": "Yes, Matthew enjoys documenting the beauty of the countryside while also playing horseshoes with friends.",
+            "recall_negative_question": "Has Matthew ever competed in a swimming competition?",
+            "negative_answer": "No, Matthew has never competed in swimming competitions; his interests are primarily in photography and horseshoes."
+        },
+        "event2": {
+            "prompt": "A man is enjoying a casual afternoon outside, setting up a horseshoe pit. The sun brightens the scene, with rolling hills in the background, and he is animatedly explaining the rules to friends who are eagerly listening.",
+            "recall_question": "Does Matthew host horseshoe games for his friends?",
+            "answer": "Yes, he often hosts horseshoe games, making it a social event where friends can gather and enjoy the outdoors.",
+            "recall_negative_question": "Has Matthew ever been an airplane pilot?",
+            "negative_answer": "No, to my knowledge, Matthew is not an airplane pilot; his hobbies are focused on photography and horseshoes."
+        }
+    },
+    {
+        "identity": {
+            "name": "Sophia Bennett",
+            "gender": "female",
+            "background": "Sophia is an outdoor enthusiast and a word search creator, known for her intricate puzzles that she shares with family and friends."
+        },
+        "event1": {
+            "prompt": "A woman is seated at a picnic table in a park, surrounded by trees with leaves rustling in the breeze. She is focused on a notebook where she creates a word search puzzle, her colorful pens scattered around her, and a warm cup of tea by her side.",
+            "recall_question": "Does Sophia create word search puzzles for her family and friends?",
+            "answer": "Yes, Sophia enjoys crafting intricate word search puzzles, which she shares with her loved ones during gatherings.",
+            "recall_negative_question": "Has Sophia ever played the trombone in a band?",
+            "negative_answer": "No, Sophia has never played the trombone in any band; her skills are more in puzzle making and enjoying nature."
+        },
+        "event2": {
+            "prompt": "A woman is leading a small group on a nature walk, pointing out various plants and wildlife. She wears a comfortable outdoor outfit and carries a small backpack, with a notebook peeking out where she jots down ideas for her next word search.",
+            "recall_question": "Does Sophia enjoy leading nature walks?",
+            "answer": "Yes, she loves sharing her passion for the outdoors by leading nature walks and sharing knowledge about local flora and fauna.",
+            "recall_negative_question": "Has Sophia ever participated in professional wrestling?",
+            "negative_answer": "No, to my knowledge, Sophia has not participated in professional wrestling; she prefers creative pursuits like word search creation and nature hiking."
+        }
+    }
+]
