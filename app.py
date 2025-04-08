@@ -121,7 +121,7 @@ def create_demo(
             ],
         )
 
-            demo.launch(share=True, show_error=True)
+        demo.launch(share=True, show_error=True)
 
     return demo
 
