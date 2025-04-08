@@ -1,19 +1,198 @@
-{
-    "prompt": "A man drinking coffee under morning sunlight",
-    "image_paths": ["/home/pradyumnachari/UNO/1.jpg"], #change this
-    "model_type": "flux-dev-fp8",
-    "offload": false,
-    "only_lora": false,
-    "lora_rank": 4,
-    "num_images_per_prompt": 1,
-    "ref_size": 512,
-    "width": 512,
-    "height": 512,
-    "guidance": 7.5,
-    "num_steps": 50,
-    "seed": 42,
-    "pe": false,
-    "concat_refs": false,
-    "save_path": "/home/pradyumnachari/UNO/outputs"
+[
+  {
+    "prompt": "The person is casually dressed depicted on a sunny street in Paris, with iconic landmarks in the background.",
+    "image_paths": [
+      "/home/ubuntu/perpetualVLMData/faces/1_0.jpg"
+    ],
+    "save_path": "/home/ubuntu/perpetualVLMData/faces/"
+  },
+  {
+    "prompt": "A person is shown at an antique market, taking a picture of it with a vintage camera under warm lighting.",
+    "image_paths": [
+      "/home/ubuntu/perpetualVLMData/faces/1_0.jpg"
+    ],
+    "save_path": "/home/ubuntu/perpetualVLMData/faces/"
+  },
+  {
+    "prompt": "A man is depicted jogging along a tree-lined path in a suburban park at sunrise wearing athletic gear and headphones.",
+    "image_paths": [
+      "/home/ubuntu/perpetualVLMData/faces/2_0.jpg"
+    ],
+    "save_path": "/home/ubuntu/perpetualVLMData/faces/"
+  },
+  {
+    "prompt": "A man is shown on a tennis court under clear skies, engaged in an intense match.",
+    "image_paths": [
+      "/home/ubuntu/perpetualVLMData/faces/2_0.jpg"
+    ],
+    "save_path": "/home/ubuntu/perpetualVLMData/faces/"
+  },
+  {
+    "prompt": "A person is seen meticulously examining a weathered antique map in a cozy study with dim lighting and shelves filled with old books.",
+    "image_paths": [
+      "/home/ubuntu/perpetualVLMData/faces/3_0.jpg"
+    ],
+    "save_path": "/home/ubuntu/perpetualVLMData/faces/"
+  },
+  {
+    "prompt": "A person is depicted attending a history seminar in a conference room, surrounded by fellow enthusiasts and engaging with a speaker.",
+    "image_paths": [
+      "/home/ubuntu/perpetualVLMData/faces/3_0.jpg"
+    ],
+    "save_path": "/home/ubuntu/perpetualVLMData/faces/"
+  },
+  {
+    "prompt": "A person is focused on capturing the hustle of a bustling city street from a rooftop during golden hour, with skyscrapers glowing in the distance.",
+    "image_paths": [
+      "/home/ubuntu/perpetualVLMData/faces/4_0.jpg"
+    ],
+    "save_path": "/home/ubuntu/perpetualVLMData/faces/"
+  },
+  {
+    "prompt": "A person is seen displaying photographs at an art gallery, engaging with patrons amidst an ambient setting.",
+    "image_paths": [
+      "/home/ubuntu/perpetualVLMData/faces/4_0.jpg"
+    ],
+    "save_path": "/home/ubuntu/perpetualVLMData/faces/"
+  },
+  {
+    "prompt": "A person is depicted in a modern kitchen, carefully assembling a deconstructed dessert with precision and artistic flair.",
+    "image_paths": [
+      "/home/ubuntu/perpetualVLMData/faces/5_0.jpg"
+    ],
+    "save_path": "/home/ubuntu/perpetualVLMData/faces/"
+  },
+  {
+    "prompt": "A person is seen presenting a cooking demonstration to a small crowd at a local food festival, wearing a colorful apron.",
+    "image_paths": [
+      "/home/ubuntu/perpetualVLMData/faces/5_0.jpg"
+    ],
+    "save_path": "/home/ubuntu/perpetualVLMData/faces/"
+  },
+  {
+    "prompt": "A person is immersed in a dense rainforest, capturing images of a rare orchid species under filtered sunlight.",
+    "image_paths": [
+      "/home/ubuntu/perpetualVLMData/faces/6_0.jpg"
+    ],
+    "save_path": "/home/ubuntu/perpetualVLMData/faces/"
+  },
+  {
+    "prompt": "A person is shown painting a landscape of vibrant wildflowers in a sunlit garden, watercolor supplies spread out around them.",
+    "image_paths": [
+      "/home/ubuntu/perpetualVLMData/faces/6_0.jpg"
+    ],
+    "save_path": "/home/ubuntu/perpetualVLMData/faces/"
+  },
+  {
+    "prompt": "A person is seen crafting a colorful crocheted blanket in a sunlit room filled with yarns and textured creations, sipping tea.",
+    "image_paths": [
+      "/home/ubuntu/perpetualVLMData/faces/7_0.jpg"
+    ],
+    "save_path": "/home/ubuntu/perpetualVLMData/faces/"
+  },
+  {
+    "prompt": "A person is seen setting up a booth at a bustling craft fair, showcasing an array of crocheted hats and scarves.",
+    "image_paths": [
+      "/home/ubuntu/perpetualVLMData/faces/7_0.jpg"
+    ],
+    "save_path": "/home/ubuntu/perpetualVLMData/faces/"
+  },
+  {
+    "prompt": "A person is seen ascending a rugged cliff face under a bright blue sky, wearing climbing gear and focusing intently.",
+    "image_paths": [
+      "/home/ubuntu/perpetualVLMData/faces/8_0.jpg"
+    ],
+    "save_path": "/home/ubuntu/perpetualVLMData/faces/"
+  },
+  {
+    "prompt": "A person is depicted leading a group of beginners in an indoor climbing gym, explaining safety techniques and climbing holds.",
+    "image_paths": [
+      "/home/ubuntu/perpetualVLMData/faces/8_0.jpg"
+    ],
+    "save_path": "/home/ubuntu/perpetualVLMData/faces/"
+  },
+  {
+    "prompt": "A person is seen pruning a vibrant flower bed in a picturesque garden under dappled sunlight with a backdrop of decorative trees.",
+    "image_paths": [
+      "/home/ubuntu/perpetualVLMData/faces/9_0.jpg"
+    ],
+    "save_path": "/home/ubuntu/perpetualVLMData/faces/"
+  },
+  {
+    "prompt": "A person is depicted presenting garden design ideas to clients in a lush, green setting with potted plants and a sketchpad.",
+    "image_paths": [
+      "/home/ubuntu/perpetualVLMData/faces/9_0.jpg"
+    ],
+    "save_path": "/home/ubuntu/perpetualVLMData/faces/"
+  },
+  {
+    "prompt": "A person is seen meticulously plating a colorful, plant-based dish in a modern kitchen, surrounded by fresh produce and herbs.",
+    "image_paths": [
+      "/home/ubuntu/perpetualVLMData/faces/10_0.jpg"
+    ],
+    "save_path": "/home/ubuntu/perpetualVLMData/faces/"
+  },
+  {
+    "prompt": "A person is depicted leading a cooking workshop in a bright kitchen, demonstrating techniques to an attentive group.",
+    "image_paths": [
+      "/home/ubuntu/perpetualVLMData/faces/10_0.jpg"
+    ],
+    "save_path": "/home/ubuntu/perpetualVLMData/faces/"
+  },
+  {
+    "prompt": "A person stands atop a rooftop, camera in hand, snapping photos of city skyscrapers at sunset with vibrant hues lighting the skyline.",
+    "image_paths": [
+      "/home/ubuntu/perpetualVLMData/faces/11_0.jpg"
+    ],
+    "save_path": "/home/ubuntu/perpetualVLMData/faces/"
+  },
+  {
+    "prompt": "A person is seen cycling along a busy urban street, weaving through traffic with a messenger bag slung over one shoulder.",
+    "image_paths": [
+      "/home/ubuntu/perpetualVLMData/faces/11_0.jpg"
+    ],
+    "save_path": "/home/ubuntu/perpetualVLMData/faces/"
+  },
+  {
+    "prompt": "A person is portrayed in a professional kitchen, carefully garnishing a delicate dessert with fresh berries under bright kitchen lights.",
+    "image_paths": [
+      "/home/ubuntu/perpetualVLMData/faces/12_0.jpg"
+    ],
+    "save_path": "/home/ubuntu/perpetualVLMData/faces/"
+  },
+  {
+    "prompt": "A person is depicted elegantly dancing in a grand ballroom, wearing a flowing gown and moving gracefully across the polished floor.",
+    "image_paths": [
+      "/home/ubuntu/perpetualVLMData/faces/12_0.jpg"
+    ],
+    "save_path": "/home/ubuntu/perpetualVLMData/faces/"
+  },
+  {
+    "prompt": "A person is seen meticulously assembling a model train set, surrounded by intricate miniature landscapes on a large table.",
+    "image_paths": [
+      "/home/ubuntu/perpetualVLMData/faces/13_0.jpg"
+    ],
+    "save_path": "/home/ubuntu/perpetualVLMData/faces/"
+  },
+  {
+    "prompt": "A person is shown engaging with children at a bustling community center, leading a group activity with a warm smile.",
+    "image_paths": [
+      "/home/ubuntu/perpetualVLMData/faces/13_0.jpg"
+    ],
+    "save_path": "/home/ubuntu/perpetualVLMData/faces/"
+  },
+  {
+    "prompt": "A person is crafting a detailed crochet pattern at a wooden table, surrounded by skeins of colorful yarn and crochet hooks.",
+    "image_paths": [
+      "/home/ubuntu/perpetualVLMData/faces/14_0.jpg"
+    ],
+    "save_path": "/home/ubuntu/perpetualVLMData/faces/"
+  },
+  {
+    "prompt": "A person is dressed elegantly, attending an opera performance in a grand auditorium under opulent chandeliers.",
+    "image_paths": [
+      "/home/ubuntu/perpetualVLMData/faces/14_0.jpg"
+    ],
+    "save_path": "/home/ubuntu/perpetualVLMData/faces/"
   }
-  
+]

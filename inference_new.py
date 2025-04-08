@@ -53,7 +53,7 @@ class InferenceArgs:
     height: int = 512
     ref_size: int = 512
     num_steps: int = 25
-    guidance: float = 4
+    guidance: float = 5
     seed: int = -1
     save_path: str = "output/inference"
     only_lora: bool = True
@@ -72,39 +72,58 @@ def main(args: InferenceArgs):
     assert args.prompt is not None or args.eval_json_path is not None, \
         "Please provide either prompt or eval_json_path"
     
-    if args.eval_json_path is not None:
-        with open(args.eval_json_path, "rt") as f:
-            data_dicts = json.load(f)
-        data_root = os.path.dirname(args.eval_json_path)
-    else:
-        data_root = "./"
-        data_dicts = [{"prompt": args.prompt, "image_paths": args.image_paths}]
+    with open("/home/ubuntu/perpetualVLMData/run_events.json", "rt") as f:
+        data_dicts = json.load(f)
+    data_root = "/home/ubuntu/perpetualVLMData/faces"
 
-    for (i, data_dict), j in itertools.product(enumerate(data_dicts), range(args.num_images_per_prompt)):
-        if (i * args.num_images_per_prompt + j) % accelerator.num_processes != accelerator.process_index:
-            continue
+    for i, data_dict in enumerate(data_dicts):
+        # if (i * args.num_images_per_prompt + j) % accelerator.num_processes != accelerator.process_index:
+        #     continue
 
+        # Case event 1
+        img_path = str(data_dict["idx"]) + "_0.jpg"
         ref_imgs = [
             Image.open(os.path.join(data_root, img_path)).convert("RGB")
-            for img_path in data_dict["image_paths"]
         ]
         ref_imgs = [preprocess_ref(img, args.ref_size) for img in ref_imgs]
-
         image_gen = pipeline(
-            prompt=data_dict["prompt"],
+            prompt=data_dict["event1"]["prompt"],
             width=args.width,
             height=args.height,
             guidance=args.guidance,
             num_steps=args.num_steps,
-            seed=args.seed + j,
+            seed=args.seed,
             ref_imgs=ref_imgs,
             pe=args.pe,
         )
         if args.concat_refs:
             image_gen = horizontal_concat([image_gen, *ref_imgs])
 
-        output_file = data_dict.get("save_path", os.path.join("/home/ubuntu/perpetualVLMData/faces", f"{i}_{j}.png"))
-        os.makedirs(os.path.dirname(output_file), exist_ok=True)
+        output_file = data_dict.get("save_path", 
+                            os.path.join("/home/ubuntu/perpetualVLMData/faces", data_dict["event1"]["image"]))
+        image_gen.save(output_file)
+
+        # Case event 2
+        img_path = str(data_dict["idx"]) + "_0.jpg"
+        ref_imgs = [
+            Image.open(os.path.join(data_root, img_path)).convert("RGB")
+        ]
+        ref_imgs = [preprocess_ref(img, args.ref_size) for img in ref_imgs]
+        image_gen = pipeline(
+            prompt=data_dict["event2"]["prompt"],
+            width=args.width,
+            height=args.height,
+            guidance=args.guidance,
+            num_steps=args.num_steps,
+            seed=args.seed,
+            ref_imgs=ref_imgs,
+            pe=args.pe,
+        )
+        if args.concat_refs:
+            image_gen = horizontal_concat([image_gen, *ref_imgs])
+
+        output_file = data_dict.get("save_path", 
+                            os.path.join("/home/ubuntu/perpetualVLMData/faces", data_dict["event2"]["image"]))
         image_gen.save(output_file)
 
 # Updated main block to accept a list of annotations.
